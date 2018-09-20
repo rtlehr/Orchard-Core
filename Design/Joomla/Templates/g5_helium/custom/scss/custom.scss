@@ -1,0 +1,45 @@
+#g-header
+{
+  height: 80px;
+}
+
+#g-header .g-container
+{
+  position: relative;
+  top: -65px;
+}
+
+#g-header .g-container h2
+{
+  font-weight: bold;
+}
+
+#g-mainbar {
+	padding: 0;
+}
+
+nav.g-main-nav
+{
+  text-align: right;
+}
+
+#g-sidebar 
+{
+  padding: 0;
+  background: #dfdfdf;
+}
+
+#g-footer 
+{
+	padding: 0;
+}
+
+footer .g-social
+{
+  text-align: right;
+}
+
+.g-style-orchardcore footer .g-social a
+{
+  color: #faf3b5;
+}
