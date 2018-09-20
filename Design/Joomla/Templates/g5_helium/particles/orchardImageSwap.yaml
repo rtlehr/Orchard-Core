@@ -1,0 +1,89 @@
+name: Orchard Image Swap
+description: Content for the rotating Header.
+type: particle
+icon: fa-sliders
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable Content Tabs particle.
+      default: true
+
+    class:
+      type: input.selectize
+      label: CSS Classes
+      description: CSS class name for the particle.
+
+    title:
+      type: input.text
+      label: Title
+      description: Customize the particle title text.
+      placeholder: Enter title
+      
+    speed:
+      type: input.text
+      label: Rotate Speed
+      description: 1000 = 1 sec.
+      placeholder: Speed in which items rotate
+      default: 5000
+    
+    imagedivcss:
+      type: textarea.textarea
+      label: Image DIV CSS
+      description: Customize the image div CSS.
+      placeholder: Enter your custom image div css here.
+      default: width: 100%; height: 600px; top: 0px; left:0px; display:flex; justify-content:center; align-items:center;
+    
+    contentdivcss:
+      type: textarea.textarea
+      label: Content DIV CSS
+      description: Customize the content div CSS.
+      placeholder: Enter your custom content div css here.
+      default: position: relative; width: 70%; height: 70%; background-color: rgba(255,255,255,0.65); padding: 1%;
+      
+    contenttitlecss:
+      type: textarea.textarea
+      label: Content Title CSS
+      description: Customize the content title CSS.
+      placeholder: Enter your custom content title css here.
+      default: font-size: 2rem; font-weight:bold;
+     
+    contenttextcss:
+      type: textarea.textarea
+      label: Content Text CSS
+      description: Customize the content text CSS.
+      placeholder: Enter your custom content text css here.
+      default: font-size 1rem;
+          
+    items:
+      type: collection.list
+      array: true
+      label: Content Tabs Items
+      description: Content Tabs item to display.
+      value: title
+      ajax: true
+
+      fields:
+        .headline:
+          type: input.text
+          label: Headline
+          description: Enter the headline
+        .content:
+          type: textarea.textarea
+          label: Tab Content
+          description: Customize the tab content.
+          placeholder: Enter your custom content here.
+        .backgroundimage:
+          type: input.imagepicker
+          label: Background Image
+          description: Select background image.
+          
+          position: relative;
+          
+  
