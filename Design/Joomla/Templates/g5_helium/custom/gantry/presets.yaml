@@ -49,6 +49,6 @@ orchardcore:
       background: '#81001E'
       text-color: '#ffffff'
     offcanvas:
-      background: '#81001E'
+      background: '#b34b4b'
       text-color: '#eceeef'
-      toggle-color: '#81001E'
+      toggle-color: '#b34b4b'
